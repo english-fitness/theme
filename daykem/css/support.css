@@ -1,0 +1,29 @@
+#main {
+    margin: 10px;
+}
+
+#mainContent {
+    padding-top: 20px;
+}
+.details-class {
+    margin-top: 10px;
+}
+.grid-view table.items th {
+    background: #325da7;
+    color: #FFFFFF;
+    text-align: center;
+}
+#userProfile {
+    float: right;
+    margin-right: 10px;
+}
+#userProfile a {
+    color: #ffffff;
+}
+#userProfile .fullName {
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
+}
+#userProfile .logOut {
+    padding-left: 10px;
+}

@@ -1,0 +1,617 @@
+/*Custom admin page style*/
+html{background-color: #CBD2D6;}
+body, td, textarea, input, select {
+    font-family: "Arial,Helvetica,sans-serif;
+    font-size: 13px;
+}
+#global-page-wrapper{
+	background-color: #CBD2D6;
+}
+/**
+* Global WellCart Styles
+*/
+.form-element-container {
+    display: block;
+    padding-top: 4px !important;
+    margin-bottom: 2px !important;
+    border-bottom: #ededed dashed 1px;
+}
+.grid-view table.items th {
+    background: #325da7;
+    color: #FFFFFF;
+    text-align: center;
+}
+textarea {
+    height: 15em;
+    width: 100%;
+}
+form label {
+    font-weight: bold;
+    color: #333;
+}
+legend {
+	font-size: 15px;
+	font-weight: bold;
+}
+ul.yiiPager .first, ul.yiiPager .last{
+	display: inline !important;
+	width: 100px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+ul.yiiPager .previous, ul.yiiPager .next{
+	display: none;
+}
+/* Noscript Notice */
+.noscript {
+    border: 1px solid #ddd;
+    border-width: 0 0 1px;
+    background: #ffff90;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    color: #2f2f2f;
+}
+
+.noscript .noscript-inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 12px 0 12px;
+}
+
+.noscript p {
+    margin: 0;
+}
+
+/* Cookie Notice */
+.notice-cookie {
+    border-bottom: 1px solid #cfcfcf;
+    background: #ffff90;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    color: #2f2f2f;
+}
+
+.notice-cookie .notice-inner {
+    width: 870px;
+    margin: 0 auto;
+    padding: 12px 0 12px 80px;
+    text-align: left;
+}
+
+.notice-cookie .notice-inner p {
+    margin: 0 0 10px;
+    border: 1px dotted #cccc73;
+    padding: 10px;
+}
+span.mark-invalid,
+span.required {
+    font-weight: bold;
+    color: #C60F13;
+}
+
+label.error {
+    color: #C60F13 !important;
+    font-size: smaller !important;
+    font-weight: normal !important;
+}
+
+label.hint {
+    font-size: smaller !important;
+    font-weight: normal !important;
+    color: #8F8F8F!important;
+}
+.table{float: left;}
+.clear{clear: both; height: 25px;}
+.header{
+	height: 80px;
+	background-color: #d2d1ff;
+	padding-top:5px;
+}
+.header .site-title{
+	color: #000;
+    font-size: 25px;
+    margin-left: 10px;
+    padding-top: 20px;
+    float: left;
+}
+.header .admin-user-info{
+	color: #fff;
+    float: right;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+.header .admin-user-info a{
+	color: #fff;
+}
+#daykem-logo{
+	background: url("../images/logo/logo1.png") no-repeat scroll 0 0 transparent;
+	height: 70px;
+	width: 78px;
+	float: left;
+	border: none;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+#hocmai-logo{
+	background: url("../images/logo/logo1.png") no-repeat scroll 0 0 transparent;
+	height: 70px;
+	width: 78px;
+	float: right;
+	border: none;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.admin-page{ clear: both;}
+.admin-page .sidebar{
+	background-color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    padding-top: 6px;
+    margin-top: 5px;
+    min-height: 300px;
+}
+.admin-page .page-content{
+	background-color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    margin-top: 5px;
+    padding: 5px 15px 5px 15px;
+}
+.error{color: red;}
+.footer{
+	height: 30px;
+	background: none repeat scroll 0 0 #E5E5E5;
+    border-color: #95BFDB;
+    color: #999999;
+    clear: both;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.footer .footer-title{
+	color: #01538C;
+}
+#login-page-wrapper p.text-center{
+	color: #01538C;
+    font-size: 25px;
+    font-weight: bold;
+}
+.admin-page .page-header-toolbar-container{
+	padding-bottom: 0px;
+}
+.admin-page .for-toolbar-buttons{
+	padding-top: 10px;
+    text-align: right;
+}
+.admin-page .grid-group-action-controls{
+	float: right;
+}
+
+.admin-page .grid-group-action-controls label{
+	padding-top: 10px;
+}
+
+.admin-page .grid-list-select-controls{
+	padding: 0 15px 8px 0;
+}
+.admin-page .button-column{width:80px !important;}
+#system-alert-container-flash{
+	margin-top: 10px;
+}
+.admin-page .left-sidebar-container .has-dropdown a.parent{
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 15px;
+}
+.admin-page .left-sidebar-container .has-dropdown a.parent:hover{
+	color: #428BCA;
+}
+.admin-page .left-sidebar-container ul{
+	margin: 0 0 10px 15px;
+}
+.admin-page .left-sidebar-container li.has-dropdown{
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+.admin-page select[multiple], select[size]{
+	height: 160px;
+}
+.admin-page .order-view .item-name{
+	font-size: 14px;
+	color: #428BCA;
+}
+.admin-page .facebook{
+	background: url("../images/admin/icon/facebook.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .gmail{
+	background: url("../images/admin/icon/gmail.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .hocmai{
+	background: url("../images/admin/icon/hocmai.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .sidebar .setting, #navigation .setting{
+	background: url("../images/admin/icon/setting.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .sidebar .classes, #navigation .classes{
+	background: url("../images/admin/icon/classes.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .sidebar .teachers, #navigation .teachers{
+	background: url("../images/admin/icon/teacher.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .sidebar .students, #navigation .students{
+	background: url("../images/admin/icon/student.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .sidebar .users, #navigation .users{
+	background: url("../images/admin/icon/user.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .sidebar .categories, #navigation .categories{
+	background: url("../images/admin/icon/category.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-user-info .logout{
+	background: url("../images/admin/icon/logout.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: right;
+	border: none;
+}
+.admin-page .icon-plus{
+	background: url("../images/admin/icon/add.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.admin-page .icon-save{
+	background: url("../images/admin/icon/save.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.admin-page .message{
+	background: url("../images/admin/icon/message.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .bellReminder{
+	background: url("../images/admin/icon/bell.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.errorMessage{
+	color: red;
+	font-size: smaller;
+	font-style: italic;
+}
+.deletedRecord, .deletedRecord a{color: red;}
+.testingSession, .testingSession a{color: #FF8000;}
+.writingQuizExam, .writingQuizExam a{
+	font-weight: bold;
+	font-size: 15px;
+}
+.admin-page .icon-undo{
+	background: url("../images/admin/icon/cancel.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.admin-page .session{
+	background: url("../images/admin/icon/session.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .clock{
+	background: url("../images/admin/icon/clock.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+
+.admin-page .form-element-container .col-lg-3 label.error{
+	color: #333333 !important;
+    font-weight: bold !important;;
+    color: #333333 !important;;
+    font-size: 14px !important;;
+}
+.admin-page .btn-edit{
+	background: url("../images/admin/icon/edit.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .btn-remove, .admin-page .icon-trash{
+	background: url("../images/admin/icon/remove.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .btn-view{
+	background: url("../images/admin/icon/view.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .sale-note{
+	background: url("../images/admin/icon/note.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .btn-back{
+	background: url("../images/admin/icon/back.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .spining-icon{
+	background: url("../images/admin/icon/spinning.gif") no-repeat scroll 0 0 transparent;
+	height: 20px;
+	width: 220px;
+	float: left;
+	border: none;
+}
+.admin-page .icon-status0{
+	background: url("../images/admin/icon/deleted.png") no-repeat scroll 0 0 transparent;
+	height: 16px;	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .icon-status1{
+	background: url("../images/admin/icon/pending.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .icon-status2{
+	background: url("../images/admin/icon/approved.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .icon-status3{
+	background: url("../images/admin/icon/completed.gif") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .trash{
+	background: url("../images/admin/icon/trash.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
+.admin-page .icon-status4{
+	width: 80px;
+}
+.admin-page .button-column{
+	width: 120px;
+}
+.admin-page .class-subjects{
+	margin: 6px 0px 6px 0px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	height: 120px;
+	overflow-y: auto;
+}
+.admin-page .course-sessions{
+	height: 200px;
+	overflow-y: auto;
+}
+/*---------------Css for dropdown menu-----------------------*/
+/*Container***************************************************/
+#navigation{
+	width:100%; height:35px; background:#325DA7;
+	z-index: 9999;
+}
+/*First level menu****************************************/
+#navigation ul{
+	margin:0px;
+	padding:0px;
+}
+/*First level list items******************************/
+#navigation ul li{
+	display:inline;
+	float:left;
+	height:30px;
+	line-height:30px;
+	list-style:none;
+	margin-left:15px;
+	position:relative;
+	z-index: 999;
+}
+/*First level anchor tags************************/
+#navigation li a{
+	color:#fff;
+	text-decoration:none;
+}
+#navigation li a:hover{
+	text-decoration:underline;
+}
+/*Second level menu*****************************/
+#navigation li ul{
+	background-color:#325DA7;
+	display:none;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	top:30px;
+}
+#navigation li:hover ul{
+	display:block;
+	width:165px;
+}
+/*Second level list items*******************/
+#navigation li li{
+	list-style:none;
+	display:list-item;
+}
+/*Second level anchors*****************/
+#navigation li li a{
+	color:#fff;
+	text-decoration:none;
+}
+#navigation li li a:hover{
+	text-decoration:underline;
+}
+#navigation li a.parent{
+	font-weight: bold;
+	float: left;
+}
+#navigation span.today{
+	color: #cccccc;
+}
+#navigation .notification{
+	color: red;
+	margin-top: -5px;
+	float: right;
+	cursor: default;
+}
+span.addUser {
+    display: block;
+    border: 1px solid #cccccc;
+    padding: 3px;;
+}
+span.addUser .loadUser span {
+    border: 1px solid #cccccc;
+    padding: 3px;
+    font-size: 11px;
+    font-weight: bold;
+
+}
+span.addUser .loadUser i{
+    cursor: pointer;
+}
+span.addUser .input input,
+span.addUser .input button{
+    border: none;
+    width: auto;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+span.addUser .input input:focus {
+    border: 1px solid #275cb3;
+}
+span.addUser .input button{
+    font-weight: 100;
+}
+math, .MathJax_Display{
+    display: inherit !important;
+    padding-right: 20px !important;
+	font-size: 11px !important;
+	text-align: left;
+}
+.itemCorrectanswer{
+	background-color: #62CACA;
+}
+#popup_background{
+	position: fixed;
+	background: none repeat scroll 0% 0% rgb(51, 51, 51);
+	opacity: 0.2; top: 0px;	bottom: 0px;
+	left: 0px; right: 0px; z-index: 99999;
+}
+
+
+.hostInfo {
+	padding-top:8px;
+	font-size:14px;
+	padding-right:5px;
+}
+.navbar-nav li{
+    position: relative;
+}
+.text-count {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    color: #ffffff;
+    background: #cc0000;
+    padding: 0px 3px;
+    border-radius:3px;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+/*****.navbar-onscholl******/
+.navbar-onscholl {
+	background-color: #325da7;
+	border-color: #27529B;
+	margin-right:-3px;
+	margin-left:-3px;
+}
+.navbar-onscholl .navbar-nav > li > a {
+	color: #eeeeee;
+}
+.navbar-onscholl .navbar-nav > .open > a, 
+.navbar-onscholl .navbar-nav > .open > a:hover, 
+.navbar-onscholl .navbar-nav > .open > a:focus,
+.navbar-onscholl .navbar-nav > .active > a,
+.navbar-onscholl .navbar-nav > li a:hover {
+	color: #fff;
+	background-color: #27529B;
+}
+
+.navbar-onscholl > .dropdown > a .caret{
+	color: #fff;
+}

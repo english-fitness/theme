@@ -1,0 +1,98 @@
+/*Style for popup page, merge from popup.css */
+#popupAll #popup{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+#popupAll .popupTitle{
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    background: #f2eaf3;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0, #f2eaf3),color-stop(1, #e1dae2));
+    background:-webkit-linear-gradient(top, #f2eaf3, #d6ced7);
+    background:-moz-linear-gradient(center top, rgba(211, 204, 212, 0.88) 0, rgba(225, 218, 226, 0.84) 45px,#e5e5e5 46px,#f7f7f7 47px,#fff 50px) repeat-x scroll center top #6C7A95;
+    background:-o-linear-gradient(center top, #d3ccd4 0, #e1dae2 45px,#e5e5e5 46px,#f7f7f7 47px,#fff 50px) repeat-x scroll center top #6C7A95;
+    background:-webkit-linear-gradient(center top, #d3ccd4 0, #e1dae2 45px,#e5e5e5 46px,#f7f7f7 47px,#fff 50px) repeat-x scroll center top #6C7A95;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 0px 5px 0px;
+    font-weight: bold;
+    padding-left: 5px;
+    color: #333333;
+    -moz-border-radius-topleft:10px;
+    -webkit-border-top-left-radius:10px;
+    -moz-border-radius-topright:10px;
+    -webkit-border-top-right-radius:10px;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+}
+#popupAll .popupTitle .remove{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+}
+#popupAll form{
+    margin: 10px;
+}
+#popupAll .noticeForm{
+    margin: 0px 10px;
+}
+#popupAll .row-form .label,
+#popupAll .row-form .value{
+    display: inline-table;
+}
+#popupAll .row-form{
+    margin: 6px 0px;
+    padding: 3px 0px;
+}
+#popupAll .row-form .label {
+    font-size: 12px;
+    font-weight: bold;
+    background: none;
+    color: #333333;
+    margin: 0px;
+    padding:5px;
+    width: 30%;
+    text-align: right;
+}
+#popupAll .row-form .value{
+    width: 60%;
+}
+#popupAll .row-form .value input{
+    padding: 3px;
+    font-size: 12px;
+    line-height: normal;
+    text-align: justify;
+    margin: 0px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#popupAll .row-form .value select{
+    display: inline-block;
+    margin: 0px;
+    margin-right: 10px;
+    padding-left: 2px;
+    min-width: 50px;
+    padding-right: 10px;
+    font-size: 12px;
+
+}
+#popupAll .row-form .value input,
+#popupAll .row-form .value textarea,
+#popupAll .row-form .value select{
+    width: 100%;
+    border: 1px solid #eeeeee;
+    border-top:1px solid #cccccc ;
+    border-left:1px solid #cccccc ;
+
+}
+
+#popupAll .row-form .value textarea{
+    margin: 0px;
+}
+#popupAll  button{
+    padding: 5px;
+    margin-right: 10px;
+}
+#popupAll input.error{border: 1px solid red !important; }
