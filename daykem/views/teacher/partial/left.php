@@ -29,8 +29,8 @@
     $baseurl = Yii::app()->baseurl."/teacher";
     $menuLeftStudent  =  array(
 	    array("label"=>"My Schedule","url"=>array($baseurl."/class/nearestSession")),     
-		array("label"=>"Check speaker, mic","url"=>array($baseurl."/testCondition/index")),
-        array("label"=>"Logout","url"=>array(Yii::app()->baseUrl."/site/logout")),
+		array("label"=>"Test speaker, microphone","url"=>array($baseurl."/testCondition/index")),
+        array("label"=>"Exit","url"=>array(Yii::app()->baseUrl."/site/logout")),
     );
     $this->widget('zii.widgets.CMenu', array(
         'items'=>$menuLeftStudent

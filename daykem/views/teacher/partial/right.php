@@ -32,13 +32,13 @@
 	<?php endif;?>
     <?php echo TestConditions::app()->getNotice(); ?>
     <?php if($countNotConfirmed>0):?>
-        <div class="row-notice"><span class="mL5">You have <?php echo $countNotConfirmed;?> unread notifications!</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;">You have <?php echo $countNotConfirmed;?> unread notifications!</span></div>
     <?php else: ?>
-        <div class="row-notice"><span class="mL5">You don't have any new notifications</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;">You don't have any new notifications</span></div>
     <?php endif; ?>
     <?php if($countMessageNotReadFlag>0):?>
-        <div class="row-notice"><span class="mL5">You have <?php echo $countMessageNotReadFlag;?> unread messages!</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;">You have <?php echo $countMessageNotReadFlag;?> unread messages!</span></div>
     <?php else: ?>
-        <div class="row-notice"><span class="mL5" style="{color:red;}">You don't have any new messages</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;">You don't have any new messages</span></div>
     <?php endif; ?>
 </div>

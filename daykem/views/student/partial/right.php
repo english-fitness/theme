@@ -32,13 +32,13 @@
 	<?php endif;?>
     <?php echo TestConditions::app()->getNotice(); ?>
     <?php if($countNotConfirmed>0):?>
-        <div class="row-notice"><span class="mL5">Bạn có <?php echo $countNotConfirmed;?> thông báo chưa đọc!</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;">Bạn có <?php echo $countNotConfirmed;?> thông báo chưa đọc!</span></div>
     <?php else: ?>
-        <div class="row-notice"><span class="mL5">Bạn chưa có thông báo mới</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;">Bạn chưa có thông báo mới</span></div>
     <?php endif; ?>
     <?php if($countMessageNotReadFlag>0):?>
-        <div class="row-notice"><span class="mL5">Bạn có <?php echo $countMessageNotReadFlag;?> tin nhắn mới chưa đọc!</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;">Bạn có <?php echo $countMessageNotReadFlag;?> tin nhắn mới chưa đọc!</span></div>
     <?php else: ?>
-        <div class="row-notice"><span class="mL5">Bạn chưa có thêm tin nhắn mới</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;">Bạn chưa có thêm tin nhắn mới</span></div>
     <?php endif; ?>
 </div>
