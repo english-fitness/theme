@@ -27,7 +27,6 @@
 		var currentDate = "<?php echo date('Y-m-d')?>";
 	</script>
 	<?php $this->renderPartial('//site/partial/facebookTracking'); ?>
-    <?php $this->renderPartial('//site/partial/tawkTo'); ?>
     <?php
     $settingHeader = Settings::loadHeader(Yii::app()->request->requestUri);
     if(isset($settingHeader->value)) { echo $settingHeader->value;}

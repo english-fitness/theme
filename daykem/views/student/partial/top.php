@@ -83,7 +83,10 @@
         </script>
     <?php endif;?>
 	<?php $this->renderPartial('//site/partial/facebookTracking'); ?>
-    <?php $this->renderPartial('//site/partial/tawkTo'); ?>
+    <?php 
+		// dont use tawk.to
+		$this->renderPartial('//site/partial/tawkTo'); 
+	?>
 
     <?php
     	$settingHeader = Settings::loadHeader(Yii::app()->request->requestUri);
@@ -97,8 +100,5 @@
 	<div class="fL" style="width:20%; height:100%;">
 		<div class="logo" style="left: 100px; top:12px;"><a href="<?php echo Yii::app()->baseUrl; ?>/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/logo/logo3.png" /></a></div>
 	</div>
-    <div class="pull-right">
-        <?php $this->renderPartial('student.views.widgets.followingStep'); ?>
-    </div>
 </div>
 <!--#top-->
