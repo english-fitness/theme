@@ -1,7 +1,7 @@
 var loading =[];
 loading.created = function()
 {
-    $("body").append('<div class="loading">Đang xử lý dữ liệu...</div>');
+    $("body").append('<div class="loading">Processing...</div>');
 }
 loading.removed = function()
 {
