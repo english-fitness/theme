@@ -1,21 +1,27 @@
 <?php
+    $userID = Yii::app()->user->id;
+    $languages = User::model()->findByPk($userID)->language;
+    Yii::app()->language=$languages;
+?>
+
+<?php
 	$user = Yii::app()->user;
 	$notifications = Notification::model()->getNotifications($user, 2, null);
 ?>
 <div class="page-title">
 	<?php $countNotConfirmed = Notification::model()->getNotifications($user, null, false, true);?>
-    <a href="<?php echo Yii::app()->baseurl ?>/student/notification">Thông báo
+    <a href="<?php echo Yii::app()->baseurl ?>/student/notification"><?php echo Yii::t('lang','Thông báo');?>
     	<?php if($countNotConfirmed>0):?><span class="error">(<?php echo $countNotConfirmed;?>)</span><?php endif;?>
     </a>
 	<?php 
 		$countMessageNotReadFlag = MessageStatus::model()->countMessageNotReadFlag(Yii::app()->user->id);
 		if($countMessageNotReadFlag>0):
 	?>
-	    <a style="float: right" href="<?php echo Yii::app()->baseurl; ?>/student/messages">Tin nhắn
+	    <a style="float: right" href="<?php echo Yii::app()->baseurl; ?>/student/messages"><?php echo Yii::t('lang','Tin nhắn');?>
 	        <span class="error">(<?php echo $countMessageNotReadFlag; ?>)</span>
 	    </a>
     <?php else:?>
-    	<a style="float: right" href="<?php echo Yii::app()->baseurl; ?>/student/messages/send">Tin nhắn</a>
+    	<a style="float: right" href="<?php echo Yii::app()->baseurl; ?>/student/messages/send"><?php echo Yii::t('lang','Tin nhắn');?></a>
     <?php endif;?>
 </div>
 <div class="notice">
@@ -32,13 +38,13 @@
 	<?php endif;?>
     <?php echo TestConditions::app()->getNotice(); ?>
     <?php if($countNotConfirmed>0):?>
-        <div class="row-notice"><span class="mL5" style="color:red;">Bạn có <?php echo $countNotConfirmed;?> thông báo chưa đọc!</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;"><?php echo Yii::t('lang','Bạn có');?> <?php echo $countNotConfirmed;?><?php echo Yii::t('lang','thông báo chưa đọc');?>!</span></div>
     <?php else: ?>
-        <div class="row-notice"><span class="mL5" style="color:red;">Bạn chưa có thông báo mới</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;"><?php echo Yii::t('lang','Bạn chưa có thông báo mới');?></span></div>
     <?php endif; ?>
     <?php if($countMessageNotReadFlag>0):?>
-        <div class="row-notice"><span class="mL5" style="color:red;">Bạn có <?php echo $countMessageNotReadFlag;?> tin nhắn mới chưa đọc!</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;"><?php echo Yii::t('lang','Bạn có');?> <?php echo $countMessageNotReadFlag;?> <?php echo Yii::t('lang','tin nhắn mới chưa đọc');?>!</span></div>
     <?php else: ?>
-        <div class="row-notice"><span class="mL5" style="color:red;">Bạn chưa có thêm tin nhắn mới</span></div>
+        <div class="row-notice"><span class="mL5" style="color:red;"><?php echo Yii::t('lang','Bạn chưa có thêm tin nhắn mới');?></span></div>
     <?php endif; ?>
 </div>
