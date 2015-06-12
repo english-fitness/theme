@@ -178,32 +178,6 @@
                 ?>
             </span>
     </div>
-<!--    <div class="language-select">
-              <form action=<?php// echo Yii::app()->baseUrl."/student/class/language";?> method="post">
-                  <?php// echo Yii::t('lang','Ngôn ngữ');?>:
-                  <?php
-                     // if($languages=='en'){
-                  ?>
-                  <select name="lang" class="calendar-availble">
-                      <option value="en" selected="selected">English</options>
-                      <option value="vi" > Tiếng việt</options>
-                  </select>
-                  <?php
-                     // }
-                     // if($languages=='vi'){
-                  ?>
-                  <select name="lang" class="calendar-availble">
-                      <option value="en" >English</options>
-                      <option value="vi" selected="selected"> Tiếng việt</options>
-                  </select>
-                  <?php 
-                     // }
-                  ?>
-                  <span>
-                      <input type="submit" value="<?php// echo Yii::t('lang','Chọn')?>"/>
-                  </span>
-              </form>
-        </div>-->
 </div>
 <!--#top-->
 
