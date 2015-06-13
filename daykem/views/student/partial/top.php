@@ -119,7 +119,7 @@
             if($languages=='en'){
         ?>
                 <form id="my-form">
-                    <?php echo Yii::t('lang','Ngôn ngữ');?>:
+                    <?php echo Yii::t('lang','Language');?>:
                     <select name="navigation">
                         <option>English</option>
                     </select>
@@ -149,7 +149,7 @@
                     if($languages=='vi'){
                         ?>
                 <form id="my-form">
-                    <?php echo Yii::t('lang','Ngôn ngữ');?>:
+                    <?php echo Yii::t('lang','Language');?>:
                     <select name="navigation">
                         <option>Tiếng việt</option>
                     </select>
