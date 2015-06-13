@@ -1252,5 +1252,7 @@ a.topParentTopic{
     font-weight: bold;
 }
 .language-select{
-    margin-left: 1100px;
+    padding-top: 20px;
+    float: right;
+    padding-right: 10px;
 }
