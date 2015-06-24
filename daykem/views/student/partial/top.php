@@ -5,7 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <!-- Latest compiled and minified CSS -->
+	<!--
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/common.css">
+	-->
+	<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/style.css">
 
 
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
