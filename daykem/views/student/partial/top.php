@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -83,6 +84,7 @@
 			});
 		</script>
         <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        
         </script>
     <?php endif;?>
 	<?php $this->renderPartial('//site/partial/facebookTracking'); ?>
@@ -95,13 +97,100 @@
     	$settingHeader = Settings::loadHeader(Yii::app()->request->requestUri);
     	if(isset($settingHeader->value)) { echo $settingHeader->value;}
     ?>
+    <?php
+        $userID = Yii::app()->user->id;
+        $languages = User::model()->findByPk($userID)->language;
+        Yii::app()->language=$languages;
+    ?>
+    <?php echo Yii::t('lang','');?>
+    
+    
 </head>
 
 <body>
 <?php $this->renderPartial('//site/partial/googleAnalytics'); ?>
+    
 <div id="top">
+        
 	<div class="fL" style="width:20%; height:100%;">
 		<div class="logo" style="left: 100px; top:12px;"><a href="<?php echo Yii::app()->baseUrl; ?>/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/logo/logo3.png" /></a></div>
 	</div>
+    <div class="language-select">
+       
+        <?php 
+   
+            if($languages=='en'){
+        ?>
+                <form id="my-form">
+                    <?php echo Yii::t('lang','Language');?>:
+                    <select name="navigation">
+                        <option>English</option>
+                    </select>
+                </form>
+                <script>
+                    var navigation = [
+                        {title: "Tiếng việt", url: '<?php echo Yii::app()->baseUrl."/student/class/language?lang=vi";?>'}
+                      ];
+
+                      var select = document.getElementById("my-form").navigation;
+
+                      for (var i=0, option; i<navigation.length; i++) {
+                        option = document.createElement("option");
+                        option.value = navigation[i].url;
+                        option.innerText = navigation[i].title;
+                        option.innerText = navigation[i].title;
+                        option.textContent=navigation[i].title;
+                        select.appendChild(option);
+                      }
+
+                      select.addEventListener("change", function(event) {
+                        window.location.href = select.value;
+                    });
+                </script>
+                <?php 
+                    }
+                    if($languages=='vi'){
+                        ?>
+                <form id="my-form">
+                    <?php echo Yii::t('lang','Language');?>:
+                    <select name="navigation">
+                        <option>Tiếng việt</option>
+                    </select>
+                </form>
+                <script>
+                    var navigation = [
+                        {title: "English", url: '<?php echo Yii::app()->baseUrl."/student/class/language?lang=en";?>'}
+                      ];
+
+                      var select = document.getElementById("my-form").navigation;
+
+                      for (var i=0, option; i<navigation.length; i++) {
+                        option = document.createElement("option");
+                        option.value = navigation[i].url;
+                        option.innerText = navigation[i].title;
+                        option.textContent=navigation[i].title;
+                        select.appendChild(option);
+                      }
+
+                      select.addEventListener("change", function(event) {
+                        window.location.href = select.value;
+                    });
+                </script>
+                <?php
+                    }
+                ?>
+            </span>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64042265-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </div>
 </div>
 <!--#top-->
+

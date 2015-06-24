@@ -1251,3 +1251,8 @@ a.topParentTopic{
     color: #325da7;
     font-weight: bold;
 }
+.language-select{
+    padding-top: 20px;
+    float: right;
+    padding-right: 10px;
+}

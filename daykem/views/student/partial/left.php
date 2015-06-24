@@ -1,3 +1,8 @@
+<?php
+        $userID = Yii::app()->user->id;
+        $languages = User::model()->findByPk($userID)->language;
+        Yii::app()->language=$languages;
+?>
 <div class="info-user h50i">
     <a href="<?php echo Yii::app()->baseUrl; ?>/student/account">
         <div class="avatar loadImageJavascript">
@@ -33,13 +38,14 @@
     <?php
     $baseurl = Yii::app()->baseurl."/student";
     $menuLeftStudent  =  array(
-		array("label"=>"Lịch học","url"=>array($baseurl."/class/nearestSession")),
-		array("label"=>"Kiểm tra loa, mic","url"=>array($baseurl."/testCondition/index")),
-		array("label"=>"Thông tin cá nhân","url"=>array($baseurl."/account/index")),
-		array("label"=>"Đổi mật khẩu", "url"=>array($baseurl."/account/changePassword")),
+		array("label"=>Yii::t('lang',"Lịch học"),"url"=>array($baseurl."/class/nearestSession")),
+		array("label"=>Yii::t('lang',"Kiểm tra loa, mic"),"url"=>array($baseurl."/testCondition/index")),
+		array("label"=>Yii::t('lang',"Thông tin cá nhân"),"url"=>array($baseurl."/account/index")),
+               // array("label"=>Yii::t('lang',"Thay đổi ngôn ngữ"),"url"=>array($baseurl."/class/language")),
+		array("label"=>Yii::t('lang',"Đổi mật khẩu"), "url"=>array($baseurl."/account/changePassword")),
         /*array("label"=>"Đăng ký học","url"=>array($baseurl."/courseRequest/index")),*/
         /*array("label"=>"Hướng dẫn sử dụng","url"=>array($baseurl."/support/index")),*/
-		array("label"=>"Thoát hệ thống","url"=>array(Yii::app()->baseUrl."/site/logout")),
+		array("label"=>Yii::t('lang',"Thoát hệ thống"),"url"=>array(Yii::app()->baseUrl."/site/logout")),
         /*array("label"=>"Ôn tập, kiểm tra kiến thức","url"=>array($baseurl."/quizExam/index")),
         array("label"=>"Thông tin học phí","url"=>array($baseurl."/information/tuition")),*/
     );
