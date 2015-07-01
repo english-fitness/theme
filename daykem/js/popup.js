@@ -27,7 +27,7 @@ function popup(config)
                 eventPopup();
 
             },
-            tempForm: function(){
+            popupForm: function(){
                 var self = this;
                 var temp = {
                     input: function(settings)
@@ -86,7 +86,7 @@ function popup(config)
                 form +="</form>";
                 return form;
             },
-            rowForm: function(label,value)
+            newRow: function(label,value)
             {
                 var form = '<div class="row-form"><div class="label">'+label+'</div><div class="value">'+value+'</div> </div>'
                 return form;

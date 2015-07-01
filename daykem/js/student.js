@@ -79,7 +79,6 @@ function bookSession(values, successCallback, errorCallback){
 		plan_start: values.start,
 		teacher_id: values.teacher,
 	};
-	console.log(session);
 	
 	$.ajax({
 		url:values.actionUrl,
