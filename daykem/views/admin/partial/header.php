@@ -1,7 +1,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/style.css" />
+   	<!-- add icon for system-->
+	<link rel="shortcut icon" href="https://speakup.vn/news/wp-content/uploads/2015/06/android-chrome-96x961.png" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/style.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/admin.css" />
 	<?php if($this->loadJQuery):?>
