@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <!--add icon for system-->
+    <link rel="shortcut icon" href="https://speakup.vn/news/wp-content/uploads/2015/06/android-chrome-96x961.png" />
     <!-- Latest compiled and minified CSS -->
 	<!--
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/common.css">
