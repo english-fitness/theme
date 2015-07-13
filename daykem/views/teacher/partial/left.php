@@ -30,7 +30,7 @@
     $menuLeftStudent  =  array(
 	array("label"=>"My Schedule","url"=>array($baseurl."/class/nearestSession")),     
 	array("label"=>"Test speaker, microphone","url"=>array($baseurl."/testCondition/index")),
-	array("label"=>"My documents","url"=>array($baseurl."/file")),
+	array("label"=>"My documents","url"=>array($baseurl."/file/index")),
         array("label"=>"Exit","url"=>array(Yii::app()->baseUrl."/site/logout")),
     );
     $this->widget('zii.widgets.CMenu', array(
