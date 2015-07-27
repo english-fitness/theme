@@ -12,6 +12,7 @@
 		<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/admin/gridview.js"></script>
 	<?php endif;?>	
 	<script src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery-ui.js"></script>
+	<script src="<?php echo Yii::app()->baseUrl; ?>/media/js/admin/menu.js"></script>
 	<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/jquery/jquery-ui.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/tags/bootstrap-tagsinput.css">
 	<script type="text/javascript">

@@ -1,7 +1,9 @@
 /*Custom admin page style*/
 html{background-color: #CBD2D6;}
 body, td, textarea, input, select {
-    font-family: "Arial,Helvetica,sans-serif;
+	/*
+    font-family: "Arial,Helvetica,sans-serif";
+	*/
     font-size: 13px;
 }
 #global-page-wrapper{
@@ -614,4 +616,42 @@ math, .MathJax_Display{
 
 .navbar-onscholl > .dropdown > a .caret{
 	color: #fff;
+}
+
+/*Admin nested menu css*/
+.dropdown-menu>li{
+	position:relative;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+	cursor:pointer;
+}
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    display:none;
+    margin-top: -1px;
+	margin-left:2px;
+}
+.right-caret:after,.left-caret:after{
+	content:"";
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    display: inline-block;
+    height: 0;
+    width: 0;
+	margin-left:5px;
+	float:right;
+	margin-top: 0.3em;
+    margin-right: -10px;
+}
+.right-caret:after{
+	border-left: 5px solid #325da7;
+}
+.left-caret:after{
+	border-right: 5px solid #325da7;
 }
