@@ -43,7 +43,10 @@
 
 </script>
 <div class="header">
+<!-- row class cause the page to overflow in width
 	<div class="row">
+-->
+	<div>
 		<a href="<?php echo Yii::app()->baseUrl; ?>/admin"><div id="daykem-logo"></div></a>
 		<div class="site-title">		
 			<span>Quản lý dạy kèm trực tuyến</span>

@@ -599,8 +599,11 @@ math, .MathJax_Display{
 .navbar-onscholl {
 	background-color: #325da7;
 	border-color: #27529B;
+	/*
 	margin-right:-3px;
 	margin-left:-3px;
+	*/
+	border-radius: 0;
 }
 .navbar-onscholl .navbar-nav > li > a {
 	color: #eeeeee;

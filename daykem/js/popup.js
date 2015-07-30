@@ -88,9 +88,14 @@ function popup(config)
             },
             newRow: function(label,value)
             {
-                var form = '<div class="row-form"><div class="label">'+label+'</div><div class="value">'+value+'</div> </div>'
+                var form = '<div class="row-form"><div class="label">'+label+'</div><div class="value">'+value+'</div> </div>';
                 return form;
             },
+			newHtmlRow: function(html)
+			{
+				var form = '<div class="row-form">' + html + '</div>';
+                return form;
+			},
             plan_duration:function (){
                 var i,
                     optionHtml;
