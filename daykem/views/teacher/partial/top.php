@@ -15,7 +15,7 @@
     <link href='<?php echo Yii::app()->baseUrl; ?>/media/js/calendar/fullcalendar.css' rel='stylesheet' />
     <link href='<?php echo Yii::app()->baseUrl; ?>/media/js/calendar/fullcalendar.print.css' rel='stylesheet' media='print' />
 
-    <script src='<?php echo Yii::app()->baseUrl; ?>/media/js/calendar/jquery.min.js'></script>
+    <script src='<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery-1.9.1.min.js'></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery.form.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/popup.js"></script>

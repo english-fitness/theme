@@ -372,6 +372,13 @@ label.hint {
 	float: left;
 	border: none;
 }
+.admin-page .btn-fine{
+	background: url("../images/admin/icon/fine.png") no-repeat center center transparent;
+	height: 16px;
+	width: 16px;
+	float: left;
+	border: none;
+}
 .admin-page .btn-remove, .admin-page .icon-trash{
 	background: url("../images/admin/icon/remove.png") no-repeat scroll 0 0 transparent;
 	height: 16px;

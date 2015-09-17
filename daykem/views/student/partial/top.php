@@ -25,9 +25,8 @@
 
 
     <!--css student-->
-    <script src='<?php echo Yii::app()->baseUrl; ?>/media/js/calendar/jquery.min.js'></script>
+    <script src='<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery-1.9.1.min.js'></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery.form.js"></script>
-    <script src='<?php echo Yii::app()->baseUrl; ?>/media/js/calendar/jquery-ui.custom.min.js'></script>
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery.slimscroll.min.js"></script>
     <!--DatePicker-->
     <script src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery-ui.js"></script>
