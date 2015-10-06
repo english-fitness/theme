@@ -40,6 +40,7 @@
     $menuLeftStudent  =  array(
 		array("label"=>Yii::t('lang',"Lịch học"),"url"=>array($baseurl."/class/nearestSession")),
 		array("label"=>Yii::t('lang',"student_schedule_calendar_view"), "url"=>array($baseurl . "/schedule/calendar")),
+        array("label"=>Yii::t('lang',"courses"),"url"=>array($baseurl."/class")),
 		array("label"=>Yii::t('lang',"student_documents"), "url"=>array($baseurl . "/file")),
 		array("label"=>Yii::t('lang',"Kiểm tra loa, mic"),"url"=>array($baseurl."/testCondition/index")),
 		array("label"=>Yii::t('lang',"Thông tin cá nhân"),"url"=>array($baseurl."/account/index")),

@@ -28,7 +28,8 @@
     <?php
     $baseurl = Yii::app()->baseurl."/teacher";
     $menuLeftStudent  =  array(
-	array("label"=>"My Schedule","url"=>array($baseurl."/class/nearestSession")),     
+	array("label"=>"My Schedule","url"=>array($baseurl."/class/nearestSession")),
+    array("label"=>"Courses Progress Report","url"=>array($baseurl."/class")),
 	array("label"=>"Test speaker, microphone","url"=>array($baseurl."/testCondition/index")),
 	array("label"=>"My documents","url"=>array($baseurl."/file/index")),
         array("label"=>"Exit","url"=>array(Yii::app()->baseUrl."/site/logout")),

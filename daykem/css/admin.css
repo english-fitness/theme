@@ -665,3 +665,8 @@ math, .MathJax_Display{
 .left-caret:after{
 	border-right: 5px solid #325da7;
 }
+
+/* Widget bodies */
+.overview-widget{
+	width: 960px;
+}

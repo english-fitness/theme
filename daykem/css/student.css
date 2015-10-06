@@ -241,6 +241,11 @@ body {
 #main .page-title a{
     color: #ffffff;
 }
+#main .page-title p{
+    color:#ffffff;
+    text-align:center;
+    font-size:20px;
+}
 
 
 /*Page account*/
