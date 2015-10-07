@@ -5,11 +5,9 @@
             <div id="main-left">
                 <?php $this->renderPartial('/partial/left'); ?>
             </div>
-            <?php
-            //<div id="main-right">
-                //<?php $this->renderPartial('/partial/right'); ? >
-            //</div>
-            ?>
+            <div id="main-right">
+                <?php $this->renderPartial('/partial/right'); ?>
+            </div>
         </div>
         <!--#main-menu-->
         <div id="main-center">

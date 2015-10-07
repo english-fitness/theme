@@ -4,11 +4,9 @@
         <div id="main-left">
             <?php $this->renderPartial('/partial/left'); ?>
         </div>
-        <?php //remove message widget
-        //<div  id="main-right">
-            //<?php $this->renderPartial('/partial/right'); ? >
-        //</div>
-        ?>
+        <div  id="main-right">
+            <?php $this->renderPartial('/partial/right'); ?>
+        </div>
     </div>
 
     <div id="main-center">
