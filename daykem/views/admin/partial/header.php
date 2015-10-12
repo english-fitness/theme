@@ -38,7 +38,9 @@
 	<div class="row">
 -->
 	<div>
-		<a href="<?php echo Yii::app()->baseUrl; ?>/admin"><div id="daykem-logo"></div></a>
+		<a href="<?php echo Yii::app()->baseUrl; ?>/admin">
+			<img class="speakup-logo" style="width:100px" src="/media/images/logo/logo.png">
+		</a>
 		<div class="site-title">		
 			<span>Quản lý dạy tiếng Anh trực tuyến</span>
 		</div>

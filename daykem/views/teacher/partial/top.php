@@ -35,7 +35,13 @@
 </head>
 <body>
 <div id="top">
-	<div class="logo" style="left: 100px; top:12px;"><a href="<?php echo Yii::app()->baseUrl; ?>/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/logo/logo3.png" /></a></div>
+	<div class="fL" style="width:20%; height:100%;">
+        <div class="logo" style="left: 80px; top:0;">
+            <a href="<?php echo Yii::app()->baseUrl; ?>/">
+                <img style="background-color:white;padding:3px 3px;width:120px;border-top-left-radius:0;border-top-right-radius:0" src="/media/images/logo/logo.png" />
+            </a>
+        </div>
+    </div>
 <!--# tắt hiển thị logo hocmai.vn ở bên tay phải
     <div class="logo" style="right: 10px; left: auto; top:12px;"><a href="<?php echo Yii::app()->baseUrl; ?>/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/logo/logo1.png" /></a></div>
 -->
