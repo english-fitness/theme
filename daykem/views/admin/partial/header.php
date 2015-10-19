@@ -6,11 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/style.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/admin.css" />
-	<?php if($this->loadJQuery):?>
-		<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery-1.9.1.min.js"></script>
-	<?php else:?>
-		<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/admin/gridview.js"></script>
-	<?php endif;?>
     <script src="/media/js/bootstrap/bootstrap.min.js"></script>
 	<script src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery-ui.js"></script>
 	<script src="<?php echo Yii::app()->baseUrl; ?>/media/js/admin/menu.js"></script>
