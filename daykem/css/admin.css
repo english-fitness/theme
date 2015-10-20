@@ -131,11 +131,8 @@ label.hint {
 	width: 120px;
 	float: left;
 	border: none;
-	margin-left: 20px;
+	margin-left: 30px;
 	margin-top: 10px;
-	background-color: white;
-	border-radius: 5px;
-	padding: 3px;
 }
 #hocmai-logo{
 	background: url("../images/logo/logo1.png") no-repeat scroll 0 0 transparent;
