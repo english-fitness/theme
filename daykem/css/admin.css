@@ -669,3 +669,7 @@ math, .MathJax_Display{
 .overview-widget{
 	width: 960px;
 }
+
+.datepicker:read-only{
+	background-color: white;
+}
