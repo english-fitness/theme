@@ -111,7 +111,7 @@
 	<div class="fL" style="width:20%; height:100%;">
 		<div class="logo" style="left: 80px; top:0;">
             <a href="<?php echo Yii::app()->baseUrl; ?>/">
-                <img style="background-color:white;padding:3px 3px;width:120px;border-top-left-radius:0;border-top-right-radius:0" src="/media/images/logo/logo.png" />
+                <img style="background-color:white;padding:5px 3px;width:120px;border-radius:0px 0px 5px 5px" src="/media/images/logo/logo-300.png" />
             </a>
         </div>
 	</div>
