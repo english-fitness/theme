@@ -4,32 +4,23 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!--Base css *put base css before title so later files registered by controllers don't get overriden-->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/media/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/style.css">
+    <!--Base js files should go here too so depending js files can use them-->
+    <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/moment.min.js"></script>
+
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <!--add icon for system-->
     <link rel="shortcut icon" href="https://speakup.vn/news/wp-content/uploads/2015/06/android-chrome-96x961.png" />
-    <!-- Latest compiled and minified CSS -->
-	<!--
-    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/common.css">
-	-->
-	<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/style.css">
 
-
-    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-
-
-    <link href='<?php echo Yii::app()->baseUrl; ?>/media/js/calendar/fullcalendar.css' rel='stylesheet' />
-    <link href='<?php echo Yii::app()->baseUrl; ?>/media/js/calendar/fullcalendar.print.css' rel='stylesheet' media='print' />
     <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/student.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/jquery/jquery-ui.css">
 
-
-
-    <!--css student-->
-	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery.form.js"></script>
+    <!--javascripts-->
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery.slimscroll.min.js"></script>
-    <!--DatePicker-->
-    <script src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery-ui.js"></script>
-    <?php echo CHtml::scriptFile(Yii::app()->theme->baseUrl.'/bootstrap/js/bootstrap.min.js');?>
+    <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/utils.js"></script>
+    <!--extra js files-->
     <?php echo CHtml::scriptFile(Yii::app()->baseUrl.'/media/js/jquery/jquery.history.js');?>
 
     <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/student.js"></script>
@@ -44,36 +35,38 @@
 			});
 		};
 	</script>
-    <script type="text/javascript">
-		var daykemBaseUrl = "<?php echo Yii::app()->baseUrl; ?>";
-		var currentDate = "<?php echo date('Y-m-d')?>";
-        $(document).ready(function(){
-            $.datepicker.regional['vi'] = {
-                closeText: 'Đóng',
-                prevText: '&#x3c;Trước',
-                nextText: 'Tiếp&#x3e;',
-                currentText: 'Hôm nay',
-                monthNames: ['Tháng Một', 'Tháng Hai', 'Tháng Ba', 'Tháng Tư', 'Tháng Năm', 'Tháng Sáu',
-                    'Tháng Bảy', 'Tháng Tám', 'Tháng Chín', 'Tháng Mười', 'Tháng Mười Một', 'Tháng Mười Hai'],
-                monthNamesShort: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6',
-                    'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
-                dayNames: ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'],
-                dayNamesShort: ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'],
-                dayNamesMin: ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'],
-                weekHeader: 'Tu',
-                dateFormat: 'dd/mm/yy',
-                firstDay: 0,
-                isRTL: false,
-                showMonthAfterYear: false,
-                yearSuffix: ''};
-            $.datepicker.setDefaults($.datepicker.regional['vi']);
-            $(document).on("click",".datepicker",function(){
-                $(this).datepicker({
-                    "dateFormat":"dd/mm/yy"
-                }).datepicker("show");;
+    <?php if (Yii::app()->language == "vi"): ?>
+        <script type="text/javascript">
+    		var daykemBaseUrl = "<?php echo Yii::app()->baseUrl; ?>";
+    		var currentDate = "<?php echo date('Y-m-d')?>";
+            $(document).ready(function(){
+                $.datepicker.regional['vi'] = {
+                    closeText: 'Đóng',
+                    prevText: '&#x3c;Trước',
+                    nextText: 'Tiếp&#x3e;',
+                    currentText: 'Hôm nay',
+                    monthNames: ['Tháng Một', 'Tháng Hai', 'Tháng Ba', 'Tháng Tư', 'Tháng Năm', 'Tháng Sáu',
+                        'Tháng Bảy', 'Tháng Tám', 'Tháng Chín', 'Tháng Mười', 'Tháng Mười Một', 'Tháng Mười Hai'],
+                    monthNamesShort: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6',
+                        'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                    dayNames: ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'],
+                    dayNamesShort: ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'],
+                    dayNamesMin: ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'],
+                    weekHeader: 'Tu',
+                    dateFormat: 'dd/mm/yy',
+                    firstDay: 0,
+                    isRTL: false,
+                    showMonthAfterYear: false,
+                    yearSuffix: ''};
+                $.datepicker.setDefaults($.datepicker.regional['vi']);
+                $(document).on("click",".datepicker",function(){
+                    $(this).datepicker({
+                        "dateFormat":"dd/mm/yy"
+                    }).datepicker("show");;
+                });
             });
-        });
-    </script>
+        </script>
+    <?php endif;?>
     <?php if($this->loadMathJax):?>
         <script type="text/x-mathjax-config">
 			MathJax.Hub.Config({

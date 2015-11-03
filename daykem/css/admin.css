@@ -673,3 +673,14 @@ math, .MathJax_Display{
 .datepicker:read-only{
 	background-color: white;
 }
+
+.modal-dialog{
+    width:960px;
+    margin-left: auto;
+}
+.row{
+    margin-bottom: 10px;
+}
+label.form-row-label{
+    line-height: 31px;
+}

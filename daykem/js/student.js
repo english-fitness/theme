@@ -15,26 +15,6 @@ loading.removed = function()
     $(".loading").remove();
 }
 $(document).ready(function(){
-    $(document).on("click","button",function(){
-        $(".myForm").ajaxForm(function(response){
-            if(response.success){
-                $(response.htmlTag).html('<div class="alert alert-success">'+response.notice+'</div>');
-                removePopupByID("popupAll");
-            }else{
-                $(response.htmlTag).html('<div class="alert alert-danger">'+response.notice+'</div>');
-            }
-            loading.removed();
-        });
-    });
-    $(".myForm").ajaxForm(function(response){
-        if(response.success){
-            $(response.htmlTag).html('<div class="alert alert-success">'+response.notice+'</div>');
-            removePopupByID("popupAll");
-        }else{
-            $(response.htmlTag).html('<div class="alert alert-danger">'+response.notice+'</div>');
-        }
-        loading.removed();
-    });
     $(document).on("click","input[type='submit']",function(){
         loading.created();
     });
