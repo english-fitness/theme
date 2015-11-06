@@ -6,26 +6,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
     <!--Base css *put base css before title so later files registered by controllers don't get overriden-->
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/media/css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/media/css/base/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->baseAssetsUrl;?>/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo $this->baseAssetsUrl;?>/css/base/style.css">
     <!--Base js files should go here too so depending js files can use them-->
-    <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/moment.min.js"></script>
+    <script type="text/javascript" src="<?php echo $this->baseAssetsUrl;?>/js/moment.min.js"></script>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
     <!--add icon for system-->
     <link rel="shortcut icon" href="https://speakup.vn/news/wp-content/uploads/2015/06/android-chrome-96x961.png" />
 
-    <link href="<?php echo Yii::app()->theme->baseUrl; ?>/css/student.css" type="text/css" rel="stylesheet">
+    <link href="<?php echo $this->themeAssetsUrl;?>/css/student.css" type="text/css" rel="stylesheet">
 
     <!--javascripts-->
-    <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/jquery/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/media/js/utils.js"></script>
+    <script type="text/javascript" src="<?php echo $this->baseAssetsUrl;?>/js/jquery/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="<?php echo $this->baseAssetsUrl;?>/js/utils.js"></script>
     <!--extra js files-->
-    <?php echo CHtml::scriptFile(Yii::app()->baseUrl.'/media/js/jquery/jquery.history.js');?>
+    <?php Yii::app()->clientScript->registerCoreScript('history');?>
 
-    <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/student.js"></script>
-    <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/popup.js"></script>
-    <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/load.js"></script>
+    <script type="text/javascript" src="<?php echo $this->themeAssetsUrl;?>/js/student.js"></script>
+    <script type="text/javascript" src="<?php echo $this->themeAssetsUrl;?>/js/popup.js"></script>
+    <script type="text/javascript" src="<?php echo $this->themeAssetsUrl;?>/js/load.js"></script>
 	<script>
 		window.onunload = function(){
 			$.ajax({

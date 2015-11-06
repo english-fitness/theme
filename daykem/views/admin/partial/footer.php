@@ -1,4 +1,4 @@
 <div id="footer">
 
 </div>
-<script src="<?php echo Yii::app()->theme->baseUrl; ?>/tags/bootstrap-tagsinput.min.js"></script>
+<script src="<?php echo $this->themeAssetsUrl ?>/tags/bootstrap-tagsinput.min.js"></script>

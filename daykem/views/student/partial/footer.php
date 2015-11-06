@@ -1,4 +1,4 @@
-<?php echo CHtml::scriptFile(Yii::app()->theme->baseUrl.'/js/messages.js'); ?>
+<?php echo CHtml::scriptFile($this->themeAssetsUrl.'/js/messages.js'); ?>
 </body>
 </hml>
 
